@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>More Forms</title>
+   </head>
+
+   <body>
+      <h1>Feedback Form</h1>
+      <p>Please fill out this form to help 
+         us improve our site.</p>
+
+      <form method = "post" action = "http://eve.kean.edu/~desira/receiver2.php">
+
+         <input type = "hidden" name = "recipient" value = "ykumar">
+         <input type = "hidden" name = "subject"  value = "Feedback Form">
+         <p><label>Name: 
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+ 
+         <!-- <textarea> creates a multiline textbox -->
+         <p><label>Comments:<br>
+            <textarea name = "comments"
+               rows = "4" cols = "36">Enter comments here.</textarea>
+         </label></p>
+
+         <p><label>E-mail Address: 
+            <input name = "email" type = "password"  size = "25">
+         </label></p>              
+
+         <p>
+            <strong>Things you liked:</strong><br>
+
+            <label>Site design
+               <input name = "thingsliked[]" type = "checkbox"   value = "Design"></label>
+            <label>Links
+               <input name = "thingsliked[]" type = "checkbox"   value = "Links"></label>
+            <label>Ease of use
+               <input name = "thingsliked[]" type = "checkbox"   value = "Ease"></label> 
+            <label>Images 
+               <input name = "thingsliked[]" type = "checkbox"   value = "Images"></label>
+            <label>Source code
+               <input name = "thingsliked[]" type = "checkbox"   value = "Code"></label>
+         </p>
+
+         <p>
+            <strong>How did you get to our site?:</strong><br>
+
+            <label>Search engine
+               <input name = "howtosite" type = "radio"  value = "search engine" checked></label>
+            <label>Links from another site
+               <input name = "howtosite" type = "radio"  value = "link"></label> 
+            <label>Deitel.com Web site
+               <input name = "howtosite" type = "radio"  value = "deitel.com"></label>
+            <label>Reference in a book
+               <input name = "howtosite" type = "radio"  value = "book"></label>
+            <label>Other
+               <input name = "howtosite" type = "radio"  value = "other"></label>
+         </p>
+
+         <p>
+            <label>Rate our site: 
+               <select name = "rating">
+                  <option selected>Amazing</option>
+                  <option>10</option>
+                  <option>9</option>
+                  <option>8</option>
+                  <option>7</option>
+                  <option>6</option>
+                  <option>5</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                  <option>Awful</option>
+               </select>
+            </label>
+         </p>
+dio Buttons</h2>
+
+         <p>
+    The <strong>input type="radio"</strong> defines a radio button:</p>
+
+<form action="/action_page.php">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+  <body>
+        <h2>Month Field</h2>
+
+<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+
+<form action="/action_page.php">
+  <label for="bdaymonth">Birthday (month and year):</label>
+< input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> type="month" is not supported in Firefox, Safari, or Internet Explorer 11 (or earlier).</p>
+ <body>
+
+            <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>
+
+
